@@ -31,7 +31,10 @@ const Calculator = () => {
   };
 
   return (
+    <>
+     <h1 className="heading">React Calculator</h1>
     <div className="calculator">
+    
       <input className="input" type="text" value={input} readOnly />
       <button className="button" onClick={() => handleButtonClick('7')}>7</button>
       <button className="button" onClick={() => handleButtonClick('8')}>8</button>
@@ -50,6 +53,8 @@ const Calculator = () => {
       <button className="button" onClick={() => handleButtonClick('=')}>=</button>
       <button className="button operator" onClick={() => handleButtonClick('/')}>/</button>
     </div>
+    </>
+   
   );
 };
 
